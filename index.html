@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://cursos.alura.com.br/user/pedrohenriquereisxavier">
+            <img src="assets/aluraLogo.png" alt="alura-logo" class="alura-logo">
+        </a>
+    </header>
+
+    <main class="presentation">
+        <section class="presentation__content">
+
+            <div class="textarea__content__container">
+                <textarea id="textArea" class="presentation__content__container__input" placeholder="Digite seu texto..." ></textarea>
+                <button id="clearButton" class="textarea__content__container__clear__button">X</button>
+            </div>
+
+            <section class="presentation__content__org">
+
+                <div class="presentation__content__org__align__restrict">
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="exclamation">
+                    <p class="presentation__content__restrict">  Apenas letras minúsculas e sem acento.</p>
+                </div>
+
+                <div class="presentation__content__org__buttons">
+                    <button onclick="encriptar()" class="presentation__content__org__buttons__action">Criptografar</button>
+                    <button onclick="descriptar()" class="presentation__content__org__buttons__action">Descriptografar</button>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="result">
+            <p id="result__result"></p> 
+            <img id="img-cript" src="assets/imageSearch.png" alt="img-result-cript" >
+            <section class="result__p">
+            <p class="result__p__empty">Nenhuma mensagem encontrada</p>
+            <p class="result__p__notice">Digite um texto que você deseja criptografar ou descriptografar.</p>
+         
+
+            </section> 
+              <button id="btn-copy" hidden class="presentation__content__org__buttons__action">Copiar</button>
+              <p id="copyFeedback" hidden class="copy-feedback">Texto copiado!</p>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__nome">Desenvolvido por Ruan Henrique.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
